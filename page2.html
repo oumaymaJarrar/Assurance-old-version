@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>asheel</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/typepography.css" />
+    <link rel="stylesheet" href="styles/buttons.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/inputs.css" />
+    <link rel="stylesheet" href="styles/wrapper.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/progress.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="assets/logo.svg" alt="logo" class="header-img" />
+      <div class="header-divider"></div>
+      <p class="text">Assurance Sante</p>
+    </header>
+
+    <div id="progress" class="progress"></div>
+
+    <div class="container" style="text-align: center">
+      <button class="back-btn" onclick="navigateToPreviousStep()">
+        <img
+          class="left-arrow"
+          src="assets/left-arrow.svg"
+          alt="this is a left arrow"
+        />
+      </button>
+
+      <h1 class="heading-primary">
+        Je souhaite que ma couverture
+        <span class="heading-primary-blue">débute le</span>
+      </h1>
+
+      <div class="wrapper">
+        <div>
+          <img src="assets/calendar.svg" alt="an image" />
+          <h2 class="heading-secondary-blue">Date de début de contrat :</h2>
+          <input class="date-input" type="date" name="" id="" />
+        </div>
+      </div>
+
+      <button class="button-primary" onclick="navigateToNextStep()">
+        je continue
+      </button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

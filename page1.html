@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>asheel</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/utils.css" />
+    <link rel="stylesheet" href="styles/typepography.css" />
+    <link rel="stylesheet" href="styles/buttons.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/inputs.css" />
+    <link rel="stylesheet" href="styles/wrapper.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/progress.css" />
+  </head>
+
+  <body onload="addStepToFirstPage()">
+    <header>
+      <img src="assets/logo.svg" alt="logo" class="header-img" />
+      <div class="header-divider"></div>
+      <p class="text">Assurance Sante</p>
+    </header>
+
+    <div id="progress" class="progress"></div>
+
+    <div class="container" style="text-align: center">
+      <h1 class="heading-primary">
+        <span class="heading-primary-blue">Qui</span>
+        souhaitez-vous assurer ?
+      </h1>
+
+      <div class="wrapper wrapper-row">
+        <div style="text-align: center; width: 200px">
+          <img src="assets/moi.svg" alt="an image" />
+          <p class="text">Moi</p>
+          <div style="display: inline-block; position: relative">
+            <label class="box">
+              <input type="radio" name="assurance" />
+              <span class="mark" onclick="setAssurance('moi')"></span>
+            </label>
+          </div>
+        </div>
+        <div style="text-align: center; width: 200px">
+          <img src="assets/conjoint.svg" alt="an image" />
+          <p class="text">Mon conjoint et moi</p>
+          <div style="display: inline-block; position: relative">
+            <label class="box">
+              <input type="radio" name="assurance" />
+              <span class="mark" onclick="setAssurance('conjoint')"></span>
+            </label>
+          </div>
+        </div>
+        <div style="text-align: center; width: 200px">
+          <img src="assets/moiEnfant.svg" alt="an image" />
+          <p class="text">Mes enfants et moi</p>
+          <div style="display: inline-block; position: relative">
+            <label class="box">
+              <input type="radio" name="assurance" />
+              <span class="mark" onclick="setAssurance('enfants')"></span>
+            </label>
+          </div>
+        </div>
+        <div style="text-align: center; width: 200px">
+          <img src="assets/conjointMoiEnfant.svg" alt="an image" />
+          <p class="text">conjoint, enfants et moi</p>
+          <div style="display: inline-block; position: relative">
+            <label class="box">
+              <input type="radio" name="assurance" />
+              <span
+                class="mark"
+                onclick="setAssurance('enfantsConjoint')"
+              ></span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <button id="next" class="button-primary" onclick="navigateToNextStep();">
+        je continue
+      </button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/typepography.css" />
+    <link rel="stylesheet" href="styles/buttons.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/inputs.css" />
+    <link rel="stylesheet" href="styles/wrapper.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/progress.css" />
+
+    <title>asheel</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="assets/logo.svg" alt="logo" class="header-img" />
+      <div class="header-divider"></div>
+      <p class="text">Assurance Sante</p>
+    </header>
+
+    <div id="progress" class="progress"></div>
+
+    <div class="container" style="text-align: center">
+      <button class="back-btn" onclick="pageEnfantNavigateBack()">
+        <img
+          class="left-arrow"
+          src="assets/left-arrow.svg"
+          alt="this is a left arrow"
+        />
+      </button>
+
+      <h1 class="heading-primary">
+        Et
+        <span class="heading-primary-blue">sur vos enfants</span>
+      </h1>
+
+      <div class="wrapper wrapper-col">
+        <div>
+          <h2 class="heading-secondary-blue">Combien d’enfants avez-vous ?</h2>
+          <div class="children-count">
+            <button onclick="decrementCounter()">-</button>
+            <input
+              class="form-group-input"
+              type="text"
+              value="0"
+              id="counter"
+            />
+            <button onclick="incrementCounter()">+</button>
+          </div>
+        </div>
+
+        <h2 class="heading-secondary-blue">
+          Quelle est sa date de naissance et son régime assuré ?
+        </h2>
+
+        <div id="enfantInfo"></div>
+      </div>
+      <button class="button-primary" onclick="pageEnfantNavigateNext()">
+        je continue
+      </button>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="enfant.js"></script>
+    <style>
+      .children-count {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+        margin: 0 auto;
+      }
+      .children-count button {
+        width: 50px;
+        height: 50px;
+        border: 1px solid rgb(201, 199, 199);
+        border-radius: 5px;
+        background-color: #d4e8ff59;
+        font-size: 18px;
+        font-weight: 600;
+        color: #1c87c9;
+        cursor: pointer;
+      }
+      .children-count input {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        border: 1px solid rgba(201, 199, 199, 0.658);
+        border-radius: 5px;
+        background-color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        color: #1c87c9;
+        text-align: center;
+      }
+
+      .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: 60px;
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+      }
+
+      .div1 {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      .div2 {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+
+      .drop-down {
+        font-size: 16px;
+        font-weight: 200;
+        color: gray;
+      }
+      .drop-down:active {
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+      }
+      .drop-down option {
+        padding: 20px;
+      }
+    </style>
+  </body>
+</html>

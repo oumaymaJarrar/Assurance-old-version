@@ -1,0 +1,7 @@
+.progress {
+  height: 2px;
+  background: #1c87c9;
+  transform: translateY(-2px);
+  width: 10%;
+  transition: width 0.3s;
+}

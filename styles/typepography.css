@@ -1,0 +1,46 @@
+.heading-primary {
+  color: rgba(8, 31, 77, 1);
+}
+
+.heading-primary-blue {
+  color: rgba(30, 150, 252, 1);
+}
+
+.heading-secondary-blue {
+  margin: 20px 0;
+  color: rgba(30, 150, 252, 1);
+}
+
+.text {
+  font-size: 16;
+  color: gray;
+  margin: 20px 0;
+  font-family: inter;
+}
+
+.text-blod {
+  font-size: 12px;
+  font-weight: 600;
+  color: gray;
+  margin-bottom: 5px;
+  font-family: Inter;
+}
+
+
+@media screen and (max-width: 900px) {
+  .heading-primary {
+    font-size: 20px;
+  }
+  .heading-primary-blue {
+    font-size: 20px;
+  }
+  .heading-secondary-blue {
+    font-size: 20px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .text-blod {
+    font-size: 12px;
+  }
+}

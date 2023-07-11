@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/utils.css" />
+    <link rel="stylesheet" href="styles/typepography.css" />
+    <link rel="stylesheet" href="styles/buttons.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/inputs.css" />
+    <link rel="stylesheet" href="styles/wrapper.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/progress.css" />
+    <title>asheel</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="assets/logo.svg" alt="logo" class="header-img" />
+      <div class="header-divider"></div>
+      <p class="text">Assurance Sante</p>
+    </header>
+
+    <div id="progress" class="progress"></div>
+
+    <div class="container" style="text-align: center">
+      <button class="back-btn" onclick="navigateToPage('page4' , getStep()-1)">
+        <img
+          class="left-arrow"
+          src="assets/left-arrow.svg"
+          alt="this is a left arrow"
+        />
+      </button>
+
+      <h1 class="heading-primary">
+        <span class="heading-primary-blue">Vous y êtes </span>
+        presque!
+      </h1>
+      <p class="text">Dites-nous en un peu plus sur vous.</p>
+      <div class="margin-bottom-60"></div>
+      <div class="info-block">
+        <div class="info-block-1">
+          <div class="form-group">
+            <label for="" class="text-blod">MON PRÉNOM</label>
+            <input class="form-group-input" type="text" />
+          </div>
+        </div>
+        <div class="info-block-2">
+          <div class="form-group">
+            <label for="" class="text-blod">MON NOM</label>
+            <input class="form-group-input" type="text" />
+          </div>
+        </div>
+        <div class="info-block-3">
+          <div class="form-group">
+            <label for="" class="text-blod">MON ADRESSE EMAIL </label>
+            <input
+              class="form-group-input"
+              type="email"
+              placeholder="nom@acheel.com"
+            />
+          </div>
+        </div>
+        <div class="info-block-4">
+          <div class="form-group">
+            <label for="" class="text-blod">MON NUMÉRO DE MOBILE</label>
+            <input
+              class="form-group-input"
+              type="tel"
+              placeholder="00 00 00 00"
+            />
+          </div>
+        </div>
+        <div class="info-block-5" style="display: flex">
+          <input
+            type="checkbox"
+            class="confirm-checkbox"
+            style="flex-shrink: 0"
+          />
+          <span class="text">
+            Oui, je souhaite recevoir par SMS et/ou email les actualités et les
+            offres de la part d&apos;Acheel. check
+          </span>
+        </div>
+        <div class="info-block-6 margin-bottom-40" style="display: flex">
+          <input
+            type="checkbox"
+            class="confirm-checkbox"
+            style="flex-shrink: 0"
+          />
+          <span class="text">
+            J&apos;accepte les conditions générales d'utilisation et que les
+            données collectées ci-dessus soient utilisées par Acheel France pour
+            me recontacter afin de finaliser ma souscription.
+          </span>
+        </div>
+      </div>
+      <button class="button-primary" onclick="navigateToNextStep()">
+        je continue
+      </button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
